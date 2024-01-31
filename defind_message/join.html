@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Join Message</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+
+    <style>
+        .messagemain {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 0.6rem;
+            font-family: 'Overlock', sans-serif;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="messagemain">
+
+        <div style="width: 80%;display: flex;justify-content: center;align-items: center;column-gap: 1rem;">
+            <hr style="width: 40%;">
+            <span style="font-size: 1.8rem;font-weight: bold;white-space: nowrap;">Login Pannel</span>
+            <hr style="width: 40%;">
+        </div>
+
+        <div style="width: 70%;">
+            <p style="text-align: start;">Embark on a journey where creativity meets technology, and possibilities are
+                Step into a realm where innovation and technology converge to redefine possibilities. Creative IT is not
+                just a destination; it's an exploration of the extraordinary. Let your ideas soar as we navigate the
+                digital landscape together, crafting solutions that transcend the ordinary. Your journey into the realm
+                of Creative IT begins now!</p>
+        </div>
+
+        <div style="width: 70%;">
+            <span id="showCountry"> </span>
+        </div>
+        <input type="email" placeholder="Enter your email addrass" name="" id="" class="basic-input">
+        <input type="password" placeholder="Enter your password" name="" id="" class="basic-input">
+        <div style="width: 70%;">
+            <a href="">I don't remember the password</a>
+        </div>
+        <div style="width: 70%;display: flex;justify-content: end;column-gap: 1rem;">
+            <button class="basic-button  unic-box-shodow-hover" style="font-size: 1.2rem;padding: 0.6rem;">Create
+                New</button>
+            <button class="basic-button  unic-box-shodow-hover"
+                style="font-size: 1.2rem;padding: 0.6rem;">Login</button>
+
+        </div>
+    </div>
+
+    <script>
+        var showCountry = document.getElementById('showCountry');
+        fetch('http://ip-api.com/json/?fields=61439')
+            .then(res => res.json())
+            .then(res => {
+                showCountry.innerHTML = 'Country Located: ' + res.country;
+            })
+            .catch(error => {
+                console.error('Error fetching country:', error);
+            });
+
+    </script>
+</body>
+
+</html>

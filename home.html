@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Game Tune</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+
+
+        <!-- CM -->
+        <div class="fixer">
+            <div class="content-closer" onclick="togleCloser();"></div>
+            <div class="content-collection-none"></div>
+            <div class="content-message-none">
+                <div style="width: 70%;height: 1rem;padding: 1rem;position: sticky;top: 0;position: -webkit-sticky;z-index: 20;">
+                    <button class="basic-button  unic-box-shodow" style="padding: 0rem;display: flex;justify-content: center;align-items: center;width: fit-content;" onclick="togleCloser();">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <iframe src="defind_message/join.html" frameborder="0" style="border-radius: 1rem;" width="100%"
+                    height="100%"></iframe>
+            </div>
+        </div>
+        <!-- <button onclick="togleMessage()">message</button> -->
+        <!-- CM -->
+
+
+        <div class="native-navigation-main">
+            <div class="native-navigation">
+                <a class="LogoAndName" href="index.html">
+                    <div class=" img-responsive"></div>
+                    <span>Game Tune</span>
+                </a>
+                <div style="display: flex;width: 90%;column-gap: 0.5rem;">
+                    <hr style="width: 40%;">Options
+                    <hr style="width: 40%;">
+                </div>
+                <div class="native-navigationOptions">
+                    <a href="#main" class="unic-box-shodow-hover">Home</a>
+                    <a href="product.html" class="unic-box-shodow-hover">Products</a>
+                    <a href="#" class="unic-box-shodow-hover">Contact</a>
+                </div>
+            </div>
+            <div class="native-navigation-background" onclick="onSecondNavigation();"></div>
+        </div>
+        <div class="navigation">
+            <a class="LogoAndName" href="index.html">
+                <div class=" img-responsive"></div>
+                <span>Game Tune</span>
+            </a>
+            <div class="navigationOptions">
+                <a href="#main">Home</a>
+
+                <button class="explere-main unic-box-shodow" style="cursor: pointer;background-color: white;">Explore
+                    <ion-icon name="chevron-down-outline"></ion-icon></button>
+                <div class="unic-box-shodow basic-button explore-content">
+                    <a style="cursor: pointer;" href="#blog">Blog</a>
+                    <a style="cursor: pointer;" href="#top-discount">Top Discounts</a>
+                    <a style="cursor: pointer;" href="#outstanding-Products">Outstanding Products</a>
+                </div>
+
+                <a href="product.html">Products</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="AccountAndCollection unic-box-shodow">
+                <button class="accountButton AccountAndCollectionButton img-responsive"
+                    onclick="location.href=`profile.html`">
+                </button>
+                <button class="collectionButton AccountAndCollectionButton img-responsive"
+                    onclick="togleCollection();"></button>
+                <button class="activiteNavidateButton AccountAndCollectionButton img-responsive"
+                    onclick="onSecondNavigation();">
+                    <ion-icon name="options"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="homeContent">
+            <div class="leftSide">
+                <span>Level Up Your Experience <br> with Top-notch Gaming <br> Headsets!</span>
+                <button class="basic-button unic-box-shodow-hover" onclick="togleMessage();">Buy Now</button>
+            </div>
+            <div class="img-responsive"></div>
+        </div>
+
+        <div class="responsiveStatus">
+            <div class="unic-box-shodow rs-box">
+                <div>
+                    <div class="img-responsive unic-box-shodow"
+                        style="background-image: url(gameTune/icons/Fast-Delivery-Fill.svg);"></div>
+                    <span>Fast Delevery</span>
+                </div>
+                <p>
+                    Swift delivery at GameTune! Get your gaming gear ASAP. Shop now for speed and convenience! 🚀🎮
+                </p>
+            </div>
+            <div class="unic-box-shodow rs-box">
+                <div>
+                    <div class="img-responsive unic-box-shodow"
+                        style="background-image: url(gameTune/icons/collection.svg);"></div>
+                    <span>Cash Delevery</span>
+                </div>
+                <p>
+                    Cash on Delivery at GameTune! Pay when your gaming gear arrives. Shop hassle-free for ultimate
+                    convenience! 💸🎮 </p>
+            </div>
+            <div class="unic-box-shodow rs-box">
+                <div>
+                    <div class="img-responsive unic-box-shodow"
+                        style="background-image: url(gameTune/icons/Return-Fill.svg);"></div>
+                    <span>Money Return</span>
+                </div>
+                <p>
+                    Seamless returns at GameTune! Not happy? No problem. Enjoy easy money returns for worry-free gaming.
+                    🎮💸
+                </p>
+            </div>
+        </div>
+
+        <div class="blog">
+            <div class="blog-image img-responsive"></div>
+            <div class="blog-content">
+                <span class="productTitle">Dive into the Sonic Abyss with the Wave486 Burex Gaming Headset!</span>
+                <div style="display: flex;column-gap: 1rem;">
+                    <div class="blog-button">
+                        <button class="basic-button unic-box-shodow img-responsive"
+                            style="background-image: url(gameTune/icons/Favorite_light.svg);background-size: contain;padding: 0.7rem;border: none;"></button>
+                        <span>158</span>
+                    </div>
+                    <div class="blog-button">
+                        <button class="basic-button unic-box-shodow img-responsive"
+                            style="background-image: url(gameTune/icons/box_refresh_right_light.svg);background-size: contain;padding: 0.7rem;border: none;"></button>
+                        <span>157</span>
+                    </div>
+                </div>
+                <div style="display: flex;width: 100%;column-gap: 1rem;align-items: center;">
+                    <hr noshade size="1" style="width: 40%;">
+                    <span style="font-weight: bold;font-size: 2rem;">Blog</span>
+                    <hr noshade size="1" style="width: 40%;">
+                </div>
+                <p class="productAbout">
+                    Introduction: In the ever-evolving realm of gaming peripherals, the Wave486 Burex has emerged as a
+                    true trailblazer, promising an auditory adventure like no other. Join us as we delve into the
+                    immersive experience crafted by the enigmatic Wave486 Burex gaming headset – a device that seems to
+                    have transcended the boundaries of sound technology.
+                    Body: Unveiling the Sonic Symphony: The Wave486 Burex claims to transport gamers into a sonic abyss,
+                    where every footstep, gunshot, and whisper is meticulously rendered for an unparalleled gaming
+                    experience. Its advanced audio processing algorithms promise to elevate your gameplay to new
+                    heights, offering a symphony of sound that immerses you in the heart of the action.
+                    Revolutionary Design: The Wave486 Burex isn't just about sound; it's a statement in design. With
+                    sleek contours, customizable RGB lighting, and futuristic aesthetics, this headset stands out as a
+                    visual marvel. The plush ear cushions and adjustable headband ensure comfort during those marathon
+                    gaming sessions, making the Wave486 Burex a true companion for the dedicated gamer.Read more
+                </p>
+
+                <div class="blog-datial-content">
+                    <div style="display: flex;flex-direction: column;min-width: 20rem;row-gap: 0.3rem;">
+                        <span style="font-size: 1.5rem;font-weight: bolder;">Rs : 13500.00</span>
+                        <span style="text-decoration: line-through;">Rs : 15000.00</span>
+                        <div style="display: flex;column-gap: 4rem;">
+                            <span>QTY : 28</span>
+                            <span>Specials : RGB Colors</span>
+                        </div>
+                        <span>Delivery : Free Delivery Cost</span>
+                    </div>
+
+                    <div style="width: 100%;display: flex;align-items: center;">
+                        <button class="unic-box-shodow-hover basic-button">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="top-discount">
+
+            <div class="unic-box-shodow">
+                <div class="discount-product-content">
+                    <span>Discover Gaming Bliss: Wave487 Yellex Headset, 70% Off!</span>
+                    <p style="font-size: 0.9rem;">Elevate your gaming audio with the Wave487 Yellex Gaming Headset – now
+                        available at an incredible
+                        70% discount! Immerse yourself in a world of rich sound and crystal-clear communication. Don't
+                        miss out on this limited-time offer – grab yours now for just 15,000 LKR! 🎮🔊 #GamingDeal
+                        #YellexHeadset #LimitedTimeOffer</p>
+                    <button class="basic-button unic-box-shodow-hover">Get 90%</button>
+                </div>
+                <div class="img-responsive discount-image" style="background-image: url(gameTune/backend_res/2.jpg);">
+                </div>
+            </div>
+            <div class="unic-box-shodow">
+                <div class="discount-product-content">
+                    <span>Discover Gaming Bliss: Wave487 Yellex Headset, 70% Off!</span>
+                    <p style="font-size: 0.9rem;">Elevate your gaming audio with the Wave487 Yellex Gaming Headset – now
+                        available at an incredible
+                        70% discount! Immerse yourself in a world of rich sound and crystal-clear communication. Don't
+                        miss out on this limited-time offer – grab yours now for just 15,000 LKR! 🎮🔊 #GamingDeal
+                        #YellexHeadset #LimitedTimeOffer</p>
+
+                    <button class="basic-button unic-box-shodow-hover">Get 40%</button>
+                </div>
+                <div class="img-responsive discount-image" style="background-image: url(gameTune/backend_res/4.jpg);">
+                </div>
+            </div>
+        </div>
+
+        <div class="outstanding-Products">
+            <div style="display: flex;align-items: center;justify-content: center;column-gap: 1rem;">
+                <hr style="width: 50%;" size="1">
+                <span style="font-size: 1.9rem;white-space: nowrap;font-weight: bold;">Outstanding Products</span>
+                <hr style="width: 50%;" size="1">
+            </div>
+            <p>
+                Discover gaming perfection with our Top Reviewed Product at GameTune! Crafted for excellence, this
+                headset combines cutting-edge tech with unmatched comfort. Elevate your gaming with crystal-clear sound
+                and superior performance. Unleash excellence – shop the pinnacle of gaming audio at GameTune today!
+            </p>
+
+            <!-- products changeble -->
+            <div class="op-products">
+                <div class="op-product unic-box-shodow">
+                    <div class="img-responsive product-logo" style="background-image: url(gameTune/backend_res/2.jpg);">
+                    </div>
+                    <span style="font-size: 1.3rem;font-weight: bolder;">Discover Gaming Bliss: Wave487 Yellex Headset,
+                        70% Off!</span>
+                    <div style="display: flex;column-gap: 2rem;align-items: center;">
+                        <div style="display: flex;flex-direction: column;">
+                            <span style="font-size:1.1rem;font-weight: bolder;">Rs : 13500.00</span>
+                            <span style="font-size:0.7rem;text-decoration: line-through;">Rs : 15000.00</span>
+                        </div>
+                        <button class="unic-box-shodow unic-box-shodow-hover basic-button"
+                            style="width: 3.2rem;height: 3rem;display: flex;justify-content: center;background-color: transparent;align-items: center;padding: 0rem;">
+                            <span class="img-responsive"
+                                style="background-size: cover;width: 2rem;height: 2rem;background-image: url(gameTune/icons/collection.svg);"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+    <script>
+        function onSecondNavigation() {
+            var navigationMain = document.querySelector('.native-navigation-main');
+            var navigator = document.querySelector('.native-navigation');
+            var navigation = navigationMain.classList;
+            const isHave = navigation.contains('native-navigation-main-block')
+            isHave ? navigation.remove('native-navigation-main-block') : navigation.add('native-navigation-main-block');
+            var body = document.body.classList
+            const isHave1 = body.contains('bodyContent');
+            isHave1 ? body.remove('bodyContent') : body.add('bodyContent');
+        }
+
+        document.addEventListener('click', function () {
+            document.addEventListener('click', function (event) {
+                // Check if the clicked element is an anchor link with a hash
+                if (event.target.tagName === 'A' && event.target.hash) {
+                    // Prevent the default jump-to behavior
+                    event.preventDefault();
+                    // Scroll smoothly to the target section
+                    document.querySelector("." + event.target.hash.slice(1)).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+
+    </script>
+    <script src="toggleCM.js"></script>
+</body>
+
+</html>
