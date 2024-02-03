@@ -10,7 +10,13 @@ function togleCollection() {
     collectionNone.classList.replace('content-collection-none', 'content-collection');
 
 }
-function togleMessage() {
+function togleMessage(getSize, getInterface) {
+    if (getSize !== '' || getSize !== null) {
+        messageNone.style.maxHeight = getSize + "rem";
+    }
+    if (getInterface !== '' || getInterface !== null) {
+        document.getElementById('interfaceID').setAttribute('src',  getInterface);
+    }
     fixer.classList.replace('fixer', 'fixer-block');
     fixer.style.justifyContent = "center";
     messageNone.classList.replace('content-message-none', 'content-message');

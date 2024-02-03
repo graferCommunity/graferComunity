@@ -3,7 +3,7 @@
 body {
     margin: 0;
     height: 100vh;
-    width: 100vw;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
@@ -50,8 +50,20 @@ body {
     /* box-shadow: 0rem 0rem 0.5rem 0rem black; */
     border-radius: 0.3rem;
     font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.basic-trash:hover {
+
+    color: red;
+}
+
+.basic-done:hover {
+
+    color: rgb(0, 255, 17);
+}
 
 .fixer {
     display: none;
@@ -64,7 +76,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100%;
-    z-index: 1000000000;
+    z-index: 10000;
 }
 
 
@@ -75,6 +87,7 @@ body {
 }
 
 .content-collection {
+    font-family: 'Overlock', sans-serif;
     position: absolute;
     width: 20rem;
     height: 100%;
@@ -83,8 +96,24 @@ body {
     animation: animateCollectionBox 0.6s forwards;
 }
 
+.collection-content {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    overflow: auto;
+    height: 75%;
+}
+
 .content-collection-none {
     display: none;
+}
+
+.cart-tortal {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    white-space: nowrap;
 }
 
 @keyframes animateCollectionBox {
@@ -103,10 +132,11 @@ body {
     width: 40%;
     min-width: 25rem;
     height: 80%;
-    ;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     animation: animateMessageAlertBox 0.4s forwards;
-    overflow: auto;
+
 }
 
 .content-message-none {
@@ -153,7 +183,6 @@ body {
 }
 
 .navigation {
-    margin-top: 0.5rem;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -161,8 +190,7 @@ body {
     width: 100%;
     height: 5rem;
     column-gap: 7rem;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: rgb(255, 255, 255);
 }
@@ -223,6 +251,8 @@ body {
 .explere-main:hover+.explore-content {
     display: flex;
     flex-direction: column;
+    align-items: start;
+
     cursor: default;
     position: fixed;
     background-color: rgb(255, 255, 255);
@@ -234,6 +264,7 @@ body {
 .explere-main:focus+.explore-content {
     display: flex;
     flex-direction: column;
+    align-items: start;
     cursor: default;
     position: fixed;
     background-color: rgb(255, 255, 255);
@@ -245,6 +276,8 @@ body {
 .explore-content:hover {
     display: flex;
     flex-direction: column;
+    align-items: start;
+
     cursor: default;
     position: fixed;
     background-color: rgb(255, 255, 255);
@@ -326,11 +359,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
     border-radius: 0.2rem;
-    padding: 0.5rem;
-    width: 2rem;
-    height: 2rem;
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 }
 
 .AccountAndCollectionButton:hover {
@@ -338,20 +370,14 @@ body {
     background-color: rgb(221, 221, 221);
 }
 
-.accountButton {
-    background-image: url(gameTune/icons/User_duotone_line.svg);
-}
 
-.collectionButton {
-
-    background-image: url(gameTune/icons/collection.svg);
-}
 
 .activiteNavidateButton {
     display: none;
 }
 
 .homeContent {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -559,25 +585,61 @@ body {
 /* product */
 
 .mainContent {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     font-family: 'Overlock', sans-serif;
     height: 100%;
     width: 100%;
     column-gap: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
 }
 
-.filter {
+.filter-expand {
+    background-color: rgb(255, 255, 255);
     width: 15rem;
     height: 100%;
     max-height: 70rem;
-    background-color: rgb(43, 43, 43);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+    overflow: auto;
+    overflow-x: auto;
+}
+
+.filter-group-content {
+
+    z-index: 10;
+    column-gap: 0.5rem;
+    display: flex;
+    position: static;
+    height: 100%;
+    left: 1rem;
+    justify-content: start;
+
+}
+
+
+.filter-expand-button {
+    display: none;
 }
 
 .productandFilter {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: start;
+    row-gap: 1rem;
+}
+
+.liveFilter {
+    width: 97%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .products {
@@ -588,8 +650,232 @@ body {
     flex-wrap: wrap;
     align-items: start;
     column-gap: 1rem;
+    row-gap: 1rem;
+    overflow: auto;
+    transition: 0.5s;
 }
 
+.fix-to-flex-product {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.op-product-product-pannel {
+
+    width: 10rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-logo-product-pannel {
+
+    width: 9rem;
+    height: 9rem;
+    min-width: 7rem;
+    min-height: 7rem;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+}
+
+.product-para-animate {
+
+    display: none;
+}
+
+.product-qty-total {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+.product-para-animate-cart {
+    font-size: 0.9rem;
+    font-weight: bold;
+    height: 2.3rem;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.product-para-animate-cart:hover {
+    max-width: 100%;
+    display: block;
+    height: 10rem;
+    overflow: auto;
+}
+
+.product-para-animate-cart:hover::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.product-para-animate-cart:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(70, 70, 70);
+    border-radius: 10rem;
+}
+
+/* selected product pannel */
+
+
+.selected-product-image {
+    width: 20rem;
+    height: 20rem;
+    background-image: url(gameTune/backend_res/1.jpg);
+    background-size: contain;
+}
+
+.selected-product-moreimages {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 20.5rem;
+    width: 100%;
+}
+
+.selected-product-moreimages div {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    background-color: white;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.show-Reviews {
+    width: 90%;
+    max-height: 30rem;
+    font-family: 'Overlock', sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.comment {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comment-up {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.commenter-logo {
+    min-width: 4rem;
+    min-height: 4rem;
+    background-color: rgb(72, 72, 72);
+    border-radius: 100%;
+}
+
+.commenter-name {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.commenter-reviews {
+    padding: 0.5rem;
+    min-width: 7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.commenter-date {
+    width: 90%;
+    text-align: end;
+}
+
+.comment-para {
+    font-family: 'Overlock', sans-serif;
+    font-weight: bolder;
+}
+
+.comment-imges {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.comment-imges label {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(106, 0, 255);
+
+}
+
+/* profile */
+
+.profile-summary {
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoAndName-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+    border-right: 0.1rem rgba(0, 0, 0, 0.395) solid;
+}
+
+.LogoAndName-profile div {
+    width: 5rem;
+    height: 5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: rgb(80, 80, 80);
+}
+
+.profile-user-datials {
+    display: flex;
+    height: 90%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.profile-user-datials-second {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+.profile-options {
+    width: 100%;
+    margin-top: 1rem;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.profile-options button {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+}
 
 @media (max-width:930px) {
     .navigationOptions {
@@ -615,6 +901,7 @@ body {
     }
 
     .homeContent div:nth-child(2) {
+        margin-top: 1rem;
 
         width: 30rem;
         height: 30rem;
@@ -680,6 +967,108 @@ body {
         flex-direction: column;
         align-items: center;
         row-gap: 1rem;
+    }
+
+    .products {
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: center;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        overflow: auto;
+        transition: 0.5s;
+    }
+
+    .filter-unExpand {
+        width: 15rem !important;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    .filter-expand {
+        width: 0rem;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    .filter-expand-button {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0rem;
+        background-image: url(gameTune/icons/Filter.svg);
+
+    }
+
+    .filter-group-content {
+
+        z-index: 10;
+        column-gap: 0.5rem;
+        display: flex;
+        position: fixed;
+        height: 80%;
+        left: 1rem;
+        justify-content: start;
+
+    }
+
+    .mainContent {
+        display: flex;
+        justify-content: center;
+        font-family: 'Overlock', sans-serif;
+        height: 100%;
+        width: 100%;
+        column-gap: 0rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .op-product-product-pannel {
+
+        width: 80%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .product-logo-product-pannel {
+
+        width: 9rem;
+        height: 9rem;
+        display: flex;
+        flex-direction: row;
+        background-size: contain;
+    }
+
+    .product-para-animate {
+        font-size: 0.9rem;
+        font-weight: bold;
+        height: 2.3rem;
+        max-width: 100%;
+        display: block;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .product-para-animate:hover {
+        max-width: 100%;
+        display: block;
+        height: 10rem;
+        overflow: auto;
+    }
+
+    .product-para-animate:hover::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    .product-para-animate:hover::-webkit-scrollbar-thumb {
+        background-color: rgb(70, 70, 70);
+        border-radius: 10rem;
     }
 }
 
@@ -757,7 +1146,6 @@ body {
     }
 
 
-
 }
 
 @media (max-width:750px) {
@@ -782,6 +1170,7 @@ body {
     }
 
     .homeContent div:nth-child(2) {
+        margin-top: 1rem;
 
         width: 20rem;
         height: 20rem;
@@ -799,9 +1188,7 @@ body {
 }
 
 @media (max-width:549px) {
-    /* .AccountAndCollection{
-        display: none;
-    } */
+
 
     .navigation {
 

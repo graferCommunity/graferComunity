@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="fixer">
+            <div class="content-closer" onclick="togleCloser();"></div>
+            <div class="content-collection-none">
+
+                <div class="collection-content">
+                    <!--  -->
+                </div>
+                <div
+                    style="width: 90%;display: flex;flex-direction: column;row-gap: 1rem;justify-content: end;padding-left: 1rem;">
+                    <div style="display: flex;flex-direction: column;">
+                        <span class="cart-tortal">Rs :
+                            0.00</span>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="text" class="basic-input">
+                        <button class="unic-box-shodow-hover basic-button"
+                            style="padding: 0.3rem;font-size: 1rem;margin-left: -3rem;">Applay</button>
+                    </div>
+                    <button class="unic-box-shodow-hover basic-button" style="padding: 0.3rem;font-size: 1.4rem;">Buy
+                        Now</button>
+                </div>
+            </div>
+
+            <div class="content-message-none">
+                <iframe src="home.html" frameborder="0" style="border-radius: 1rem;" width="100%"
+                    height="100%"></iframe>
+            </div>
+        </div>
+        <div class="native-navigation-main">
+            <div class="native-navigation">
+                <a class="LogoAndName" href="index.html">
+                    <div class=" img-responsive"></div>
+                    <span>Game Tune</span>
+                </a>
+                <div style="display: flex;width: 90%;column-gap: 0.5rem;">
+                    <hr style="width: 40%;">Options
+                    <hr style="width: 40%;">
+                </div>
+                <div class="native-navigationOptions">
+                    <a href="home.html" class="unic-box-shodow-hover">Home</a>
+                    <a href="product.html" class="unic-box-shodow-hover">Products</a>
+                    <a href="#" class="unic-box-shodow-hover">Contact</a>
+
+                </div>
+            </div>
+            <div class="native-navigation-background" onclick="onSecondNavigation();"></div>
+        </div>
+        <div class="navigation">
+            <a class="LogoAndName" href="index.html">
+                <div class=" img-responsive"></div>
+                <span>Game Tune</span>
+            </a>
+            <div class="navigationOptions">
+                <a href="home.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="AccountAndCollection unic-box-shodow">
+                <button class=" AccountAndCollectionButton " onclick="location.href=`profile.html`">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                </button>
+                <button class=" AccountAndCollectionButton " onclick="togleCollection();">
+                    <ion-icon name="extension-puzzle-outline"></ion-icon>
+
+                </button>
+                <button class="activiteNavidateButton AccountAndCollectionButton" onclick="onSecondNavigation();">
+                    <ion-icon name="options"></ion-icon>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="blog" style="margin-top: 6rem;row-gap: 4rem;">
+            <div class="selected-product-image img-responsive">
+                <div class="selected-product-moreimages">
+                    <div class="unic-box-shodow unic-box-shodow-hover img-responsive"
+                        style="background-image: url(gameTune/backend_res/1.jpg);"></div>
+                    <div class="unic-box-shodow unic-box-shodow-hover img-responsive"
+                        style="background-image: url(gameTune/backend_res/2.jpg);"></div>
+                    <div class="unic-box-shodow unic-box-shodow-hover img-responsive"
+                        style="background-image: url(gameTune/backend_res/3.jpg);"></div>
+                </div>
+            </div>
+            <div class="blog-content">
+                <span style="font-size: 1.5rem;">Dive into the Sonic Abyss with the Wave486 Burex Gaming Headset!</span>
+                <p class="productAbout">
+                    Elevate your gaming audio with the
+                    Wave487 Yellex
+                    Gaming Headset – now available at
+                    an incredible 70% discount! Immerse yourself in a world of rich sound and
+                    crystal-clear communication. Don't miss out on this limited-time offer – grab yours
+                    now for just 15,000 LKR! 🎮🔊 #GamingDeal #YellexHeadset #LimitedTimeOffer
+                </p>
+
+                <div class="fix-to-flex-product">
+                    <div style="display: flex;flex-direction: column;">
+                        <div style="display: flex;">
+                            <span>Rs : &nbsp; <span class="product-qty-total genarate-total-price" mainPrice="2000.00"
+                                    id="total356">2000.00</span></span>
+                        </div>
+
+                        <span style="text-decoration: line-through;">Rs :
+                            15000.00</span>
+                        <li style="white-space: nowrap;font-weight: bolder;">Cash On Delivery &#10003; &#x2718;</li>
+
+                        <div style="display: flex;flex-direction: column;row-gap: 1rem;align-items: end;">
+                            <div style="display: flex;align-items: center;">
+                                <span>In Stock : 30 / &nbsp; </span>
+                                <span style="white-space: nowrap;">QTY : &nbsp;</span>
+                                <!-- 356 samanayi product id ekata -->
+                                <button class="unic-box-shodow basic-button" onclick="increment('356')"
+                                    style="padding: 0rem;margin-right: -1rem;z-index: 10;"><ion-icon
+                                        name="add-outline"></ion-icon></button>
+                                <input type="text" class="basic-input"
+                                    style="height: 0.1rem;max-width: 5rem;text-align: center;font-size: 0.9rem;"
+                                    value="1" readonly id="qtyInput356">
+                                <button class="unic-box-shodow basic-button" onclick="decrement('356')"
+                                    style="padding: 0rem;margin-left: -1rem;"><ion-icon
+                                        name="remove-outline"></ion-icon></button>
+                            </div>
+                            <div style="display: flex;width: 100%;justify-content: flex-start;">
+                                <input type="text" class="basic-input" placeholder="enter discount code">
+                                <button class="unic-box-shodow-hover basic-button"
+                                    style="padding: 0.3rem;font-size: 1rem;margin-left: -3rem;">Applay</button>
+                            </div>
+                            <div
+                                style="display: flex;column-gap: 1rem;align-items: center;justify-content: start;width: 100%;">
+                                <button onclick="togleMessage();" product="456"
+                                    class="unic-box-shodow unic-box-shodow-hover basic-button basic-done"
+                                    style="width: 3.2rem;height: 3rem;display: flex;justify-content: center;background-color: transparent;align-items: center;padding: 0rem;">
+                                    <ion-icon name="receipt-outline"></ion-icon>
+                                </button>
+                                <div style="width: 100%;display: flex;align-items: center;">
+                                    <button class="unic-box-shodow-hover basic-button">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;width: 90%;column-gap: 1rem;align-items: center;margin-top: 1rem;">
+            <hr style="width: 50%;" size="1" color="black">
+            <div style="display: flex;column-gap: 1rem;">
+                <button class="basic-button unic-box-shodow unic-box-shodow-hover"
+                    style="font-size: 0.9rem;">Reviews</button>
+                <button class="basic-button unic-box-shodow unic-box-shodow-hover"
+                    style="font-size: 0.9rem;">Products</button>
+            </div>
+
+            <hr style="width: 50%" size="1" color="black">
+        </div>
+
+        <div class="show-Reviews">
+            <span style="position: sticky;position: -webkit-sticky;font-size: 1.8rem;">Comments</span>
+            <div class="comment unic-box-shodow">
+                <div class="comment-up">
+                    <div class="commenter-logo img-responsive"
+                        style="background-image: url(gameTune/backend_res/userlogo.jpeg);"></div>
+                    <div class="commenter-name">Indeepa Dissanyaka</div>
+                    <div class="commenter-reviews unic-box-shodow unic-box-shodow-hover">10/10 Reviews</div>
+                    <div class="commenter-date">2023/01/23</div>
+                </div>
+                <hr width="95%" size="1">
+                <textarea rows="6" cols="10" class="comment-para ">This HeadSet Is Super Product I Giv 10/10 Reviews.Elevate your gaming audio
+                    with the Wave487 Yellex Gaming Headset – now available at an incredible 70% discount! Immerse
+                    yourself in a world of rich sound and crystal-clear communication. Don't miss out on this
+                    limited-time offer – grab yours now for just 15,000 LKR! 🎮🔊 #GamingDeal #YellexHeadset
+                    #LimitedTimeOffer</textarea>
+                    <div style="margin-top: 1rem;display: flex;align-items: center;">
+                       <span>My Review &nbsp;</span>
+                        <input type="number" class="basic-input" style="max-width: 5rem;text-align: center;" placeholder="10">
+                        <span style="font-size: 1.3rem;font-weight: bold;"> &nbsp;/10</span>
+                    </div>
+                <div class="comment-imges">
+                    <label for="comment-logo-one" class="unic-box-shodow unic-box-shodow-hover img-responsive" style="cursor: pointer;"></label>
+                    <label for="comment-logo-two" class="unic-box-shodow unic-box-shodow-hover img-responsive" style="cursor: pointer;"></label>
+                    <label for="comment-logo-three" class="unic-box-shodow unic-box-shodow-hover img-responsive" style="cursor: pointer;"></label>
+                    <label for="comment-logo-four" class="unic-box-shodow unic-box-shodow-hover img-responsive" style="cursor: pointer;"></label>
+                
+                    <input type="file" style="display: none;" id="comment-logo-one">
+                    <input type="file" style="display: none;" id="comment-logo-two">
+                    <input type="file" style="display: none;" id="comment-logo-three">
+                    <input type="file" style="display: none;" id="comment-logo-four">
+                
+                </div>
+                <div style="margin-top: 1rem;">
+                    <button class="basic-button unic-box-shodow unic-box-shodow-hover" style="font-size: 0.8rem;">Submit
+                        Or Update</button>
+                </div>
+            </div>
+            <div class="comment unic-box-shodow">
+                <div class="comment-up">
+                    <div class="commenter-logo img-responsive"
+                        style="background-image: url(gameTune/backend_res/vecteezy_cute.svg);"></div>
+                    <div class="commenter-name">Another User</div>
+                    <div class="commenter-reviews unic-box-shodow unic-box-shodow-hover">10/10 Reviews</div>
+                    <div class="commenter-date">2023/01/23</div>
+                </div>
+                <hr width="95%" size="1">
+                <div class="comment-para">This HeadSet Is Super Product I Giv 10/10 Reviews.Elevate your gaming audio
+                    with the Wave487 Yellex Gaming Headset – now available at an incredible 70% discount! Immerse
+                    yourself in a world of rich sound and crystal-clear communication. Don't miss out on this
+                    limited-time offer – grab yours now for just 15,000 LKR! 🎮🔊 #GamingDeal #YellexHeadset
+                    #LimitedTimeOffer</div>
+                <div class="comment-imges">
+                    <label class="unic-box-shodow img-responsive" style="background-image: url(gameTune/backend_res/download.jpg);"></label>
+                    <label class="unic-box-shodow img-responsive" style="background-image: url(gameTune/backend_res/download.jpg);"></label>
+                    <label class="unic-box-shodow img-responsive" style="background-image: url(gameTune/backend_res/download.jpg);"></label>
+                    <label class="unic-box-shodow img-responsive" style="background-image: url(gameTune/backend_res/download.jpg);"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function onSecondNavigation() {
+            var navigationMain = document.querySelector('.native-navigation-main');
+            var navigator = document.querySelector('.native-navigation');
+            var navigation = navigationMain.classList;
+            const isHave = navigation.contains('native-navigation-main-block')
+            isHave ? navigation.remove('native-navigation-main-block') : navigation.add('native-navigation-main-block');
+            var body = document.body.classList
+            const isHave1 = body.contains('bodyContent');
+            isHave1 ? body.remove('bodyContent') : body.add('bodyContent');
+        }
+
+    </script>
+
+    <script src="toggleCM.js"></script>
+    <script src="script.js"> </script>
+</body>
+
+</html>
