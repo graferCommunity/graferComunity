@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Profile</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- CM -->
+        <div class="fixer">
+            <div class="content-closer" onclick="togleCloser();"></div>
+            <div class="content-collection-none">
+                <div class="collection-content">
+                    <!--  -->
+                </div>
+                <div
+                    style="width: 90%;display: flex;flex-direction: column;row-gap: 1rem;justify-content: end;padding-left: 1rem;">
+                    <div style="display: flex;flex-direction: column;">
+                        <span class="cart-tortal">Rs :
+                            0.00</span>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="text" class="basic-input">
+                        <button class="unic-box-shodow-hover basic-button"
+                            style="padding: 0.3rem;font-size: 1rem;margin-left: -3rem;">Applay</button>
+                    </div>
+                    <button class="unic-box-shodow-hover basic-button" style="padding: 0.3rem;font-size: 1.4rem;">Buy
+                        Now</button>
+                </div>
+            </div>
+            <div class="content-message-none">
+
+                <div style="width: 70%;height: 1rem;padding: 1rem;position: sticky;top:0;z-index: 20;">
+                    <button class="basic-button  unic-box-shodow"
+                        style="padding: 0rem;display: flex;justify-content: center;align-items: center;width: fit-content;"
+                        onclick="togleCloser();">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                <iframe frameborder="0" style="border-radius: 1rem;"
+                    width="100%" height="100%" id="interfaceID"></iframe>
+            </div>
+        </div>
+        <!-- <button onclick="togleMessage()">message</button> -->
+        <!-- CM -->
+
+
+        <div class="native-navigation-main">
+            <div class="native-navigation">
+                <a class="LogoAndName" href="index.html">
+                    <div class=" img-responsive"></div>
+                    <span>Game Tune</span>
+                </a>
+                <div style="display: flex;width: 90%;column-gap: 0.5rem;">
+                    <hr style="width: 40%;">Options
+                    <hr style="width: 40%;">
+                </div>
+                <div class="native-navigationOptions">
+                    <a href="#main" class="unic-box-shodow-hover">Home</a>
+                    <a href="product.html" class="unic-box-shodow-hover">Products</a>
+                    <a href="#" class="unic-box-shodow-hover">Contact</a>
+                </div>
+            </div>
+            <div class="native-navigation-background" onclick="onSecondNavigation();"></div>
+        </div>
+        <div class="navigation">
+            <a class="LogoAndName" href="index.html">
+                <div class=" img-responsive"></div>
+                <span>Game Tune</span>
+            </a>
+            <div class="navigationOptions">
+                <a href="home.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="AccountAndCollection unic-box-shodow">
+                <button class=" AccountAndCollectionButton " onclick="location.href=`profile.html`">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                </button>
+                <button class=" AccountAndCollectionButton " onclick="togleCollection();">
+                    <ion-icon name="extension-puzzle-outline"></ion-icon>
+
+                </button>
+                <button class="activiteNavidateButton AccountAndCollectionButton" onclick="onSecondNavigation();">
+                    <ion-icon name="options"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="mainContent">
+
+            <div class="filter-group-content">
+                <div class="filter-expand"
+                    style="display: flex;align-items: center;border-right: 0.1rem rgba(0, 0, 0, 0.407) solid;overflow: hidden;">
+                    <button class="basic-button unic-box-shodow unic-box-shodow-hover"
+                        style="font-size: 1.2rem;width: 14rem;margin-top: 1rem;">Profile</button>
+                    <button class="basic-button unic-box-shodow unic-box-shodow-hover"
+                        style="font-size: 1.2rem;width: 14rem;">Orders</button>
+                </div>
+                <button onclick="toggleFilter();"
+                    class="img-responsive unic-box-shodow filter-expand-button basic-button unic-box-shodow"></button>
+            </div>
+
+
+            <div class="outstanding-Products" style="padding: 1rem;flex-direction: column;width: 100%;">
+
+                <div class="profile-summary unic-box-shodow">
+                    <div class="LogoAndName-profile ">
+                        <div class="img-responsive" style="background-image: url(gameTune/backend_res/userlogo.jpeg);">
+                        </div>
+                        <span>No Name</span>
+                    </div>
+                    <div class="profile-user-datials">
+                        <div class="profile-user-datials-second">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                                <span style="white-space: nowrap;overflow: hidden;">First name : Lilye</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-options">
+                    <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/name.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change Name</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                          <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button>
+                    <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/email.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change Email</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                           <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button>
+
+                    <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/password.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change Password</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                         <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button> <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/mobile.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change Mobile</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                           <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button> <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/province.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change Province</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                          <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button> <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/district.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change District</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                           <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button> <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/city.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change City</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                           <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button> <button class="editable-list  basic-button unic-box-shodow" onclick="togleMessage('20','defind_message/profile-changes/addrass.html');">
+                        <span style="white-space: nowrap;font-size: 1rem;">Change Devilery Home Addrass</span>
+                        <div style="width: 100%;display: flex;justify-content: end;">
+                           <ion-icon name="chevron-collapse-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function onSecondNavigation() {
+            var navigationMain = document.querySelector('.native-navigation-main');
+            var navigator = document.querySelector('.native-navigation');
+            var navigation = navigationMain.classList;
+            const isHave = navigation.contains('native-navigation-main-block')
+            isHave ? navigation.remove('native-navigation-main-block') : navigation.add('native-navigation-main-block');
+            var body = document.body.classList
+            const isHave1 = body.contains('bodyContent');
+            isHave1 ? body.remove('bodyContent') : body.add('bodyContent');
+        }
+
+        document.addEventListener('click', function () {
+            document.addEventListener('click', function (event) {
+                // Check if the clicked element is an anchor link with a hash
+                if (event.target.tagName === 'A' && event.target.hash) {
+                    // Prevent the default jump-to behavior
+                    event.preventDefault();
+                    // Scroll smoothly to the target section
+                    document.querySelector("." + event.target.hash.slice(1)).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        function toggleFilter() {
+            var filter = document.querySelector('.filter-expand');
+            const isHave = filter.classList.contains('filter-unExpand');
+            isHave ? filter.classList.remove('filter-unExpand') : filter.classList.add('filter-unExpand')
+
+        }
+    </script>
+    <script src="toggleCM.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .fixer {
+            display: none;
+        }
+
+        .fixer-block {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-closer {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.282);
+        }
+
+        .content-collection {
+            position: absolute;
+            width: 20rem;
+            height: 100%;
+            margin-right: -20rem;
+            background-color: rgb(255, 255, 255);
+            animation: animateCollectionBox 0.6s forwards;
+        }
+
+        .content-collection-none {
+            display: none;
+        }
+
+        @keyframes animateCollectionBox {
+            0% {
+                margin-right: -20rem;
+            }
+
+            100% {
+                margin-right: 0rem;
+            }
+        }
+
+        .content-message {
+            border-radius: 1rem;
+            position: absolute;
+            width: 40%;
+            min-width: 25rem;
+            height: 80%;
+            max-height: 50rem;
+            background-color: rgb(255, 255, 255);
+            animation: animateMessageAlertBox 0.4s forwards;
+    
+        }
+
+        .content-message-none {
+            display: none;
+        }
+
+        @keyframes animateMessageAlertBox {
+            0% {
+                width: 40%;
+                height: 80%;
+            }
+
+            100% {
+                width: 50%;
+                height: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fixer">
+        <div class="content-closer" onclick="togleCloser();"></div>
+        <div class="content-collection-none"></div>
+        <div class="content-message-none">
+            <iframe src="home.html" frameborder="0" style="border-radius: 1rem;" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+    <button onclick="togleCollection()">collection</button>
+    <button onclick="togleMessage()">message</button>
+    <script src="toggleCM.js"></script>
+</body>
+
+</html>

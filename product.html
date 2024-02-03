@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GT Product Panner</title>
+    <link rel="icon" href="gameTune/icons/EraseBG.org.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body onload="totalSum();">
+
+
+    <div class="main">
+
+        <div class="fixer">
+            <div class="content-closer" onclick="togleCloser();"></div>
+            <div class="content-collection-none">
+
+                <div class="collection-content">
+                    <!--  -->
+                    <div class="op-product-product-pannel unic-box-shodow"
+                        style="flex-direction: row;width: 90%;column-gap: 1rem;">
+                        <div class="img-responsive product-logo-product-pannel"
+                            style="background-image: url(gameTune/backend_res/5.jpeg);">
+                        </div>
+                        <div>
+
+                            <a href="123" style="font-size: 1.4rem;font-weight: bolder;">Discover Gaming Bliss: Wave487
+                                Yellex
+                                Headset,
+                                70% Off!</a>
+                            <p class="product-para-animate-cart">Elevate your gaming audio with the
+                                Wave487 Yellex
+                                Gaming Headset – now available at
+                                an incredible 70% discount! Immerse yourself in a world of rich sound and
+                                crystal-clear communication. Don't miss out on this limited-time offer – grab yours
+                                now for just 15,000 LKR! 🎮🔊 #GamingDeal #YellexHeadset #LimitedTimeOffer</p>
+                            <div class="fix-to-flex-product">
+                                <div style="display: flex;flex-direction: column;">
+                                    <div style="display: flex;">
+                                        <span>Rs : &nbsp; <span class="product-qty-total genarate-total-price"
+                                                mainPrice="2000.00" id="total356">2000.00</span></span>
+                                    </div>
+
+                                    <span style="font-size:0.7rem;text-decoration: line-through;">Rs :
+                                        15000.00</span>
+                                    <div style="display: flex;flex-direction: column;row-gap: 1rem;align-items: end;">
+                                        <div style="display: flex;align-items: center;">
+                                            <span style="white-space: nowrap;">QTY : &nbsp;</span>
+
+                                            <!-- 356 samanayi product id ekata -->
+                                            <button class="unic-box-shodow basic-button" onclick="increment('356')"
+                                                style="padding: 0rem;margin-right: -1rem;z-index: 10;"><ion-icon
+                                                    name="add-outline"></ion-icon></button>
+                                            <input type="text" class="basic-input"
+                                                style="height: 0.1rem;max-width: 5rem;text-align: center;font-size: 0.9rem;"
+                                                value="1" readonly id="qtyInput356">
+                                            <button class="unic-box-shodow basic-button" onclick="decrement('356')"
+                                                style="padding: 0rem;margin-left: -1rem;"><ion-icon
+                                                    name="remove-outline"></ion-icon></button>
+                                        </div>
+
+                                        <div style="display: flex;column-gap: 1rem;align-items: center;">
+                                            <button onclick="addtoCart(this);" product="456"
+                                                class="unic-box-shodow unic-box-shodow-hover basic-button basic-trash"
+                                                style="width: 3.2rem;height: 3rem;display: flex;justify-content: center;background-color: transparent;align-items: center;padding: 0rem;">
+                                                <ion-icon name="trash-outline" class=" basic-button"
+                                                    style="padding: 0rem;"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="width: 90%;display: flex;flex-direction: column;row-gap: 1rem;justify-content: end;padding-left: 1rem;">
+                    <div style="display: flex;flex-direction: column;">
+                        <span class="cart-tortal">Rs :
+                            0.00</span>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="text" class="basic-input">
+                        <button class="unic-box-shodow-hover basic-button"
+                            style="padding: 0.3rem;font-size: 1rem;margin-left: -3rem;">Applay</button>
+                    </div>
+                    <button class="unic-box-shodow-hover basic-button" style="padding: 0.3rem;font-size: 1.4rem;">Buy
+                        Now</button>
+                </div>
+            </div>
+
+            <div class="content-message-none">
+                <iframe src="home.html" frameborder="0" style="border-radius: 1rem;" width="100%"
+                    height="100%"></iframe>
+            </div>
+        </div>
+        <div class="native-navigation-main">
+            <div class="native-navigation">
+                <a class="LogoAndName" href="index.html">
+                    <div class=" img-responsive"></div>
+                    <span>Game Tune</span>
+                </a>
+                <div style="display: flex;width: 90%;column-gap: 0.5rem;">
+                    <hr style="width: 40%;">Options
+                    <hr style="width: 40%;">
+                </div>
+                <div class="native-navigationOptions">
+                    <a href="home.html" class="unic-box-shodow-hover">Home</a>
+                    <a href="#" class="unic-box-shodow-hover">Contact</a>
+                </div>
+            </div>
+            <div class="native-navigation-background" onclick="onSecondNavigation();"></div>
+        </div>
+        <div class="navigation">
+            <a class="LogoAndName" href="index.html">
+                <div class=" img-responsive"></div>
+                <span>Game Tune</span>
+            </a>
+            <div class="navigationOptions">
+                <a href="home.html">Home</a>
+
+                <a href="#">Contact</a>
+            </div>
+            <div class="AccountAndCollection unic-box-shodow">
+                <button class=" AccountAndCollectionButton " onclick="location.href=`profile.html`">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                </button>
+                <button class=" AccountAndCollectionButton " onclick="togleCollection();">
+                    <ion-icon name="extension-puzzle-outline"></ion-icon>
+
+                </button>
+                <button class="activiteNavidateButton AccountAndCollectionButton" onclick="onSecondNavigation();">
+                    <ion-icon name="options"></ion-icon>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="mainContent">
+
+            <div class="filter-group-content">
+                <div class="filter-expand unic-box-shodow">
+                    <span
+                        style="width: 100%;display: flex;justify-content: center;margin-top: 0.4rem;font-size: 1.6rem;font-weight: bolder;">Product
+                        Fillter</span>
+                    <div style="overflow: auto;height: 100%">
+                        <div>
+                            <span style="padding-left: 0.4rem;font-weight: 600;margin-top: 1rem;font-size:1.1rem;">Price
+                                :
+                            </span>
+                            <div style="display: flex;padding: 1rem;column-gap: 1rem;">
+
+                                <input type="number" class="basic-input" placeholder="min" style="padding: 0.4rem;">
+
+                                <input type="number" class="basic-input" placeholder="max" style="padding: 0.4rem;">
+                            </div>
+
+
+                        </div>
+                        <div>
+                            <span
+                                style="padding-left: 0.4rem;font-weight: 600;margin-top: 1rem;font-size:1.1rem;">Brands
+                                : </span>
+
+                            <div style="display: flex;flex-wrap: wrap;">
+                                <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                    <input type="checkbox" class="" name="" id="" size="" />
+                                    : Apple
+                                </div>
+                                <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                    <input type="checkbox" class="" name="" id="" size="" />
+                                    : Sony
+                                </div>
+                                <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                    <input type="checkbox" class="" name="" id="" size="" />
+                                    : Samsung
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <span
+                                style="padding-left: 0.4rem;font-weight: 600;margin-top: 1rem;font-size:1.1rem;">Genders
+                                : </span>
+                            <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                <input type="checkbox" class="" name="" id="" size="" />
+                                : Male
+                            </div>
+                            <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                <input type="checkbox" class="" name="" id="" size="" />
+                                : Female
+                            </div>
+                        </div>
+                        <div>
+                            <span
+                                style="padding-left: 0.4rem;font-weight: 600;margin-top: 1rem;font-size:1.1rem;">Colours
+                                : </span>
+
+                            <div style="display: flex;flex-wrap: wrap;">
+
+                                <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                    <input type="checkbox" class="" name="" id="" size="" />
+                                    : Red
+                                </div>
+                                <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                    <input type="checkbox" class="" name="" id="" size="" />
+                                    : Yelow
+                                </div>
+                                <div style="display: flex;margin-left: 2rem;column-gap: 0.6rem;margin-top: 0.5rem;">
+                                    <input type="checkbox" class="" name="" id="" size="" />
+                                    : Green
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="column-gap: 1rem;width: 100%;display: flex;justify-content: end;align-items: center;margin-left: -1rem;margin-bottom: 1rem;">
+                        <a href="">Clear All</a>
+                        <button class="basic-button unic-box-shodow-hover" style="font-size: 0.9rem;">Applay</button>
+                    </div>
+                </div>
+                <button onclick="toggleFilter();"
+                    class="img-responsive unic-box-shodow filter-expand-button basic-button unic-box-shodow"></button>
+            </div>
+
+            <div class="productandFilter">
+                <div class="liveFilter">
+                    <input type="text" class="basic-input" placeholder="Search product">
+                    <ion-icon name="search-outline"
+                        style="font-size: 1.9rem;margin-left: -2rem;font-weight: 100;"></ion-icon>
+
+                </div>
+                <div class="products outstanding-Products">
+                    <!--  -->
+
+                    <div class="op-product-product-pannel unic-box-shodow unic-box-shodow-hover">
+                        <div class="img-responsive product-logo-product-pannel"
+                            style="background-image: url(gameTune/backend_res/2.jpg);">
+                        </div>
+                        <div>
+                            <a href="123" style="font-size: 1rem;font-weight: bolder;">Discover Gaming Bliss: Wave487
+                                Yellex
+                                Headset,
+                                70% Off!</a>
+                            <p class="product-para-animate">Elevate your gaming audio with the Wave487 Yellex
+                                Gaming Headset – now available at
+                                an incredible 70% discount! Immerse yourself in a world of rich sound and
+                                crystal-clear communication. Don't miss out on this limited-time offer – grab yours
+                                now for just 15,000 LKR! 🎮🔊 #GamingDeal #YellexHeadset #LimitedTimeOffer</p>
+                            <div class="fix-to-flex-product">
+                                <div style="display: flex;flex-direction: column;">
+                                    <span style="font-size:0.9rem;font-weight: bolder;white-space: nowrap;">Rs :
+                                        13500.00</span>
+                                    <span style="font-size:0.7rem;text-decoration: line-through;">Rs :
+                                        15000.00</span>
+                                </div>
+                                <div style="display: flex;column-gap: 1rem;align-items: center;">
+                                    <button onclick="addtoCart(this);" product="123"
+                                        class="unic-box-shodow unic-box-shodow-hover basic-button"
+                                        style="width: 3.2rem;height: 3rem;display: flex;justify-content: center;background-color: transparent;align-items: center;padding: 0rem;">
+                                        <ion-icon name="extension-puzzle-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="op-product-product-pannel unic-box-shodow unic-box-shodow-hover">
+                        <div class="img-responsive product-logo-product-pannel"
+                            style="background-image: url(gameTune/backend_res/2.jpg);">
+                        </div>
+                        <div>
+                            <a href="123" style="font-size: 1rem;font-weight: bolder;">Discover Gaming Bliss: Wave487
+                                Yellex
+                                Headset,
+                                70% Off!</a>
+                            <p class="product-para-animate">Elevate your gaming audio with the Wave487 Yellex
+                                Gaming Headset – now available at
+                                an incredible 70% discount! Immerse yourself in a world of rich sound and
+                                crystal-clear communication. Don't miss out on this limited-time offer – grab yours
+                                now for just 15,000 LKR! 🎮🔊 #GamingDeal #YellexHeadset #LimitedTimeOffer</p>
+                            <div class="fix-to-flex-product">
+                                <div style="display: flex;flex-direction: column;">
+                                    <span style="font-size:0.9rem;font-weight: bolder;white-space: nowrap;">Rs :
+                                        13500.00</span>
+                                    <span style="font-size:0.7rem;text-decoration: line-through;">Rs :
+                                        15000.00</span>
+                                </div>
+                                <div style="display: flex;column-gap: 1rem;align-items: center;">
+                                    <button onclick="addtoCart(this);" product="456"
+                                        class="unic-box-shodow unic-box-shodow-hover basic-button"
+                                        style="width: 3.2rem;height: 3rem;display: flex;justify-content: center;background-color: transparent;align-items: center;padding: 0rem;">
+                                        <ion-icon name="extension-puzzle-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function onSecondNavigation() {
+            var navigationMain = document.querySelector('.native-navigation-main');
+            var navigator = document.querySelector('.native-navigation');
+            var navigation = navigationMain.classList;
+            const isHave = navigation.contains('native-navigation-main-block')
+            isHave ? navigation.remove('native-navigation-main-block') : navigation.add('native-navigation-main-block');
+            var body = document.body.classList
+            const isHave1 = body.contains('bodyContent');
+            isHave1 ? body.remove('bodyContent') : body.add('bodyContent');
+        }
+
+        function toggleFilter() {
+            var filter = document.querySelector('.filter-expand');
+            const isHave = filter.classList.contains('filter-unExpand');
+            isHave ? filter.classList.remove('filter-unExpand') : filter.classList.add('filter-unExpand')
+
+        }
+
+    </script>
+
+    <script src="toggleCM.js"></script>
+    <script src="script.js"> </script>
+</body>
+
+</html>

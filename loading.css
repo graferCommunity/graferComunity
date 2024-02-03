@@ -1,0 +1,52 @@
+ @import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+ body {
+
+     height: 100vh;
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .LogoImage {
+     background-size: 200% auto;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-image: url(gameTune/backend_res/vecteezy_cute.svg);
+     width: 10rem;
+     height: 10rem;
+ }
+
+ .CompanyName {
+     font-family: 'Overlock', sans-serif;
+     font-weight: bolder;
+     font-size: 3rem;
+     overflow: hidden;
+     white-space: nowrap;
+     animation: loding 2s forwards;
+
+ }
+
+ @media (max-width:450px){
+    body{
+     display: flex;
+     flex-direction: column;
+    }
+    .CompanyName {
+        display: flex;
+justify-content: center;   
+    }
+ }
+
+ @keyframes loding {
+
+     0% {
+         width: 0rem;
+
+     }
+
+     100% {
+         width: 14rem;
+     }
+ }
