@@ -1,0 +1,230 @@
+<!-- working status : online -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="icon" href="Images/home/logo.png">
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="navigation-main">
+      <div class="logo-and-title">
+        <div class="navigation-logo img-responsive"></div>
+        <div class="navigation-title">Clothes Shop</div>
+      </div>
+      <div class="navigations">
+        <a href="index.html" class="navigation-names">Home</a>
+        <a class="navigation-names" href="#">Shop Now</a>
+        <a href="#" class="navigation-names">Contact</a>
+      </div>
+      <div class="bag-and-account">
+        <button class="cover-button" onclick="window.location =`collection.html`;">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </button>
+        <!-- smd is a (small devices) -->
+        <button class="cover-button smd-navigation-button openDissition-js">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="profile">
+          <a href="#" class="navigation-names">Create / Login</a>
+        </div>
+      </div>
+    </div>
+    <!-- side nav -->
+    <div class="side-navigaton-main">
+      <div class="navigations-aria">
+        <div class="logo-and-title">
+          <div class="navigation-logo img-responsive"></div>
+          <div class="navigation-title">Clothes Shop</div>
+        </div>
+        <hr width="50%" size="1">
+        <div style="display: flex;flex-direction: column;row-gap: 1rem;margin-top: 2rem;">
+          <a href="index.html" class="navigation-names">Home</a>
+          <a class="navigation-names" href="#">Shop Now</a>
+          <a href="#" class="navigation-names">Contact</a>
+        </div>
+      </div>
+      <div class="dissition-aria closeDissition-js"></div>
+    </div>
+    <div class="body-content">
+
+      <div class="content c3">
+
+        <div class="filter">
+          <div class=""></div>
+          <div class="setp">
+            <span style="font-size: 1.3rem;width: 100%;">Filter You Like</span>
+            <!--  -->
+            <div class="filter-content">
+              <div style="display: flex;align-items: center;width: 100%;">
+                <span style="font-size: 1.1rem;width: 100%;">PRICE</span>
+                <button class="cover-button" onclick="expandFilterContent('price')"
+                  style="width: 1.5rem;height: 1.5rem;"><ion-icon name="add"
+                    class="change-price-icon"></ion-icon></button>
+              </div>
+              <div class="filter-selectors price">
+                <div style="display: flex;;align-items: center;column-gap: 1rem;">
+                  <input type="number" placeholder="MIN" class="default-input"
+                    style="background-color: transparent;border: 1px solid rgba(0, 0, 0, 0.348);">
+                  <input type="number" placeholder="MAX" class="default-input"
+                    style="background-color: transparent;border: 1px solid rgba(0, 0, 0, 0.348);">
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="filter-content">
+              <div style="display: flex;align-items: center;width: 100%;">
+                <span style="font-size: 1.1rem;width: 100%;">COLOR</span>
+                <button class="cover-button " onclick="expandFilterContent('color')"
+                  style="width: 1.5rem;height: 1.5rem;"><ion-icon name="add"
+                    class="change-color-icon"></ion-icon></button>
+              </div>
+              <div class="filter-selectors color">
+                <div style="display: flex;;align-items: center;">
+                  <input type="checkbox">
+                  <span>Black</span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="filter-content">
+              <div style="display: flex;align-items: center;width: 100%;">
+                <span style="font-size: 1.1rem;width: 100%;">SIZE</span>
+                <button class="cover-button " onclick="expandFilterContent('size')"
+                  style="width: 1.5rem;height: 1.5rem;"><ion-icon name="add"
+                    class="change-size-icon"></ion-icon></button>
+              </div>
+              <div class="filter-selectors size">
+                <div style="display: flex;;align-items: center;">
+                  <input type="checkbox">
+                  <span>Black</span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="filter-content">
+              <div style="display: flex;align-items: center;width: 100%;">
+                <span style="font-size: 1.1rem;width: 100%;">METERIAL</span>
+                <button class="cover-button " onclick="expandFilterContent('meterial')"
+                  style="width: 1.5rem;height: 1.5rem;"><ion-icon name="add"
+                    class="change-meterial-icon"></ion-icon></button>
+              </div>
+              <div class="filter-selectors meterial">
+                <div style="display: flex;;align-items: center;">
+                  <input type="checkbox">
+                  <span>Black</span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="filter-content">
+              <div style="display: flex;align-items: center;width: 100%;">
+                <span style="font-size: 1.1rem;width: 100%;">BRAND</span>
+                <button class="cover-button " onclick="expandFilterContent('brand')"
+                  style="width: 1.5rem;height: 1.5rem;"><ion-icon name="add"
+                    class="change-brand-icon"></ion-icon></button>
+              </div>
+              <div class="filter-selectors brand">
+                <div style="display: flex;;align-items: center;">
+                  <input type="checkbox">
+                  <span>Black</span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="filter-content">
+              <div style="display: flex;align-items: center;width: 100%;">
+                <span style="font-size: 1.1rem;width: 100%;">GENDER</span>
+                <button class="cover-button " onclick="expandFilterContent('gender')"
+                  style="width: 1.5rem;height: 1.5rem;"><ion-icon name="add"
+                    class="change-gender-icon"></ion-icon></button>
+              </div>
+              <div class="filter-selectors gender">
+                <div style="display: flex;;align-items: center;">
+                  <input type="checkbox">
+                  <span>Black</span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div
+            style="width: 100%;display: flex;column-gap: 1rem;align-items: center;justify-content: end;padding: 1rem;">
+            <button class="default-button" style="min-width: 7rem;background-color: red;">CLEAR ALL</button>
+            <button class="default-button" style="min-width: 3rem;">SAVE</button>
+          </div>
+        </div>
+        <div class="product">
+          <!--  -->
+          <div class="row-p-main">
+            <div>
+              <div class="img-responsive row-p-image"
+                style="background-image: url('Images/home/beautiful-men-fashion-fleece-jacket_1203-7648.jpg');"></div>
+            </div>
+            <div style="width: 100%;">
+              <span class="p-title">This is example item</span>
+              <div class="row-p-datials price-aria">
+                <span>LKR : 1069.00</span>
+                <span></span>
+                <span style="width: fit-content;">Availble : 15</span>
+              </div>
+              <div
+                style="width: 90%;display: flex;justify-content: end;margin-top: 1rem;padding: 0.5rem;column-gap: 1rem;">
+                <button class="cover-button" cpid="1"  onclick="openBUY(this);"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                <button class="default-button" pid="1"  onclick="openBUY(this);" >BUY NOW</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+    <div
+      style="font-family: var(--asap-font);width: 100%;display: flex;background-color: rgb(242, 242, 242);max-width: 70rem;padding: 1rem;">
+      <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 1rem;">
+        <span style="font-size: 1.4rem;font-weight: bold;">Abilities</span>
+        <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 0.5rem;">
+          <li>First Delivery</li>
+          <li>Quick Payments</li>
+          <li>Safe & Secure Payments</li>
+        </div>
+        <span style="font-size: 1.4rem;font-weight: bold;">Supported Countries</span>
+        <div style="display: flex;flex-direction: column;margin-left: 1rem;">
+          <li>Sri Lanka Only</li>
+        </div>
+      </div>
+      <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 1rem;">
+        <span style="font-size: 1.4rem;font-weight: bold;">Payment Methods</span>
+        <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 0.5rem;">
+          <li>Visa/Master</li>
+          <li>Bank</li>
+          <li>Cash On Delivery</li>
+          <li>Payhere</li>
+        </div>
+        <span style="font-size: 1.4rem;font-weight: bold;">Join Us</span>
+        <div class="social-icons">
+          <a href="#" target="_blank" class="img-responsive"></a>
+          <a href="#" target="_blank" class="img-responsive"></a>
+          <a href="#" target="_blank" class="img-responsive"></a>
+          <a href="#" target="_blank" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

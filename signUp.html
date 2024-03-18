@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Fabric Shop</title>
+  <link rel="icon" href="Images/home/logo.png">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src="https://kit.fontawesome.com/0632640a2a.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='sign.css'>
+</head>
+
+<body>
+  <div class="main">
+    <div class="navigation-main">
+      <div class="logo-and-title">
+        <div class="navigation-logo img-responsive"></div>
+        <div class="navigation-title">Clothes Shop</div>
+      </div>
+      <div class="navigations">
+        <a href="index.html" class="navigation-names">Home</a>
+        <a class="navigation-names">Shop Now</a>
+        <a href="#" class="navigation-names">Contact</a>
+      </div>
+      <div class="bag-and-account">
+        <button class="cover-button openDissition-js Cart">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </button>
+        <!-- smd is a (small devices) -->
+        <button class="cover-button smd-navigation-button openDissition-js">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="profile">
+          <a href="#" class="navigation-names">Create / Login</a>
+        </div>
+      </div>
+    </div>
+    <!-- side nav -->
+    <div class="side-navigaton-main">
+      <div class="navigations-aria">
+        <div class="logo-and-title">
+          <div class="navigation-logo img-responsive"></div>
+          <div class="navigation-title">Clothes Shop</div>
+        </div>
+        <hr width="50%" size="1">
+        <div style="display: flex;flex-direction: column;row-gap: 1rem;margin-top: 2rem;">
+          <a href="index.html" class="navigation-names">Home</a>
+          <a class="navigation-names">Shop Now</a>
+          <a href="#" class="navigation-names">Contact</a>
+        </div>
+      </div>
+      <div class="cart-ariea">
+        <div class="logo-and-title">
+          <div class="navigation-logo img-responsive"></div>
+          <div class="navigation-title">Clothes Shop</div>
+        </div>
+        <hr width="50%" size="1">
+        <div style="display: flex;flex-direction: column;row-gap: 1rem;margin-top: 2rem;height: 60%;overflow: auto;">
+          <!--  -->
+        </div>
+        <div style="height: 10%;width: 100%;display: flex;align-items: center;justify-content: flex-end;">
+          <button class="default-button">BUY ALL</button>
+        </div>
+      </div>
+      <div class="dissition-aria closeDissition-js"></div>
+    </div>
+
+    <div class="body-content">
+      <!-- your content --->
+      <div class="content">
+        <div>
+          <div class="graphical-aria ga-setImg img-responsive"></div>
+        </div>
+        <div clas="txt-aria">
+          <h1 class="title">
+            Sign Up to Clothes Shop
+          </h1>
+          <p class="paragraph">
+            Sign Up to cloth Shop for a personalized shopping experience. Access your order history,
+            save favourites and checkout faster. Don't have an account?. Create one to stay up-to-date
+            with trends and exclusive offers.
+          </p>
+          <div class="input-container">
+            <div class="row">
+              <input type="text" id="input1" placeholder="First Name">
+              <input type="text" id="input2" placeholder="Last Name">
+            </div>
+            <div class="row-long">
+              <input type="email" id="input3" placeholder="Email Address">
+            </div>
+            <div class="row-long">
+              <input type="text" id="input4" placeholder="Mobile No">
+            </div>
+            <div class="row">
+              <input type="password" id="input5" placeholder="Password">
+              <input type="password" id="input6" placeholder="Confirm Password">
+            </div>
+            <div class="row-short">
+              <input type="text" id="input7" placeholder="Age">
+              <div class="dropdown">
+                <select name="" id="select" onchange="handleChange(this)">
+                  <option value="">Gender</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="inline">
+            <h5 class="header">
+              Already have an Account?
+              <a href="signIn.html" class="hyperlink">Login</a>
+            </h5>
+            <button class="button">Create Account</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div style="font-family: var(--asap-font);width: 100%;display: flex;background-color: rgb(242, 242, 242);max-width:
+        70rem;padding: 1rem;">
+        <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 1rem;">
+          <span style="font-size: 1.4rem;font-weight: bold;">Abilities</span>
+          <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 0.5rem;">
+            <li>First Delivery</li>
+            <li>Quick Payments</li>
+            <li>Safe & Secure Payments</li>
+          </div>
+          <span style="font-size: 1.4rem;font-weight: bold;">Supported Countries</span>
+          <div style="display: flex;flex-direction: column;margin-left: 1rem;">
+            <li>Sri Lanka Only</li>
+          </div>
+        </div>
+        <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 1rem;">
+          <span style="font-size: 1.4rem;font-weight: bold;">Payment Methods</span>
+          <div style="display: flex;flex-direction: column;margin-left: 1rem;row-gap: 0.5rem;">
+            <li>Visa/Master</li>
+            <li>Bank</li>
+            <li>Cash On Delivery</li>
+            <li>Payhere</li>
+          </div>
+          <span style="font-size: 1.4rem;font-weight: bold;">Join Us</span>
+          <div class="social-icons">
+            <a href="#" target="_blank" class="img-responsive"></a>
+            <a href="#" target="_blank" class="img-responsive"></a>
+            <a href="#" target="_blank" class="img-responsive"></a>
+            <a href="#" target="_blank" class="img-responsive"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sign.js"></script>
+
+</body>
+
+</html>
